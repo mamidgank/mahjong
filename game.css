@@ -1,0 +1,71 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:radial-gradient(circle,#1b5e20,#06281f);
+  color:white;
+  text-align:center;
+}
+
+header{
+  background:#041a14;
+  padding:16px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.card{
+  background:#0f5132;
+  margin:20px;
+  padding:16px;
+  border-radius:18px;
+}
+
+.row{
+  margin:12px;
+}
+
+.spinBtn{
+  padding:12px 20px;
+  border:none;
+  border-radius:12px;
+  font-weight:bold;
+  background:linear-gradient(#ffd700,#ffb300);
+  font-size:16px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin-top:16px;
+}
+
+.cell{
+  background:#f5f5dc;
+  color:#333;
+  height:64px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  animation:drop .25s ease;
+}
+
+.scatter{
+  background:#ffe082;
+}
+
+.winGlow{
+  animation:glow .6s alternate 3;
+}
+
+@keyframes drop{
+  from{transform:translateY(-30px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+
+@keyframes glow{
+  from{box-shadow:0 0 4px gold}
+  to{box-shadow:0 0 18px gold}
+}
