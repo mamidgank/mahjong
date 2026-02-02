@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="admin.css">
+<title>Admin Panel Simulator</title>
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<div class="card">
+Balance: <span id="info"></span><br><br>
+<input id="add" type="number" placeholder="Tambah coin">
+<button onclick="addCoin()">Apply</button>
+</div>
+
+<div class="card">
+Win Rate %
+<input id="rate" type="number"><br>
+Multiplier
+<input id="multi" type="number"><br>
+<label><input type="checkbox" id="force"> Force Win</label><br>
+<button onclick="saveSet()">Save Setting</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
