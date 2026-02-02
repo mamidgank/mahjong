@@ -104,3 +104,13 @@ function finishSpin(bet){
   save(db);
   refresh();
     }
+// ===== INIT GRID SAAT LOAD =====
+function initGrid(){
+  let temp=[];
+  for(let i=0;i<20;i++){
+    temp.push(randSym());
+  }
+  buildGrid(temp);
+}
+
+initGrid();
