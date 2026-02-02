@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Mahjong Slot Simulator</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<header>Mahjong Slot Simulator</header>
+
+<div class="card">
+
+  Coin: <span id="bal">0</span>
+
+  <div class="row">
+    Bet:
+    <select id="bet">
+      <option>50</option>
+      <option selected>100</option>
+      <option>200</option>
+      <option>500</option>
+    </select>
+
+    <button onclick="spin()" class="spinBtn">SPIN</button>
+  </div>
+
+  <div id="freeInfo"></div>
+
+  <div id="grid" class="grid"></div>
+
+  <div id="result"></div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
