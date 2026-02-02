@@ -37,7 +37,7 @@ function buildGrid(arr){
 function spin(){
 
   let db=load();
-  let bet=parseInt(betEl.value||bet.value);
+  let bet=parseInt(document.getElementById("bet").value);
 
   if(freeSpins===0){
     if(db.player.balance<bet){
